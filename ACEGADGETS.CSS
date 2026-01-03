@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+
+}
+html{
+    overflow-x: hidden;
+    
+}
+
+:root {
+    --navbg: black;
+    --navbody: white;
+    --hover: rgb(73, 191, 238);
+    --font: rgb(76, 163, 116);
+    --button: rgb(13, 49, 84);
+    --color: rgb(73, 191, 238);
+
+}
+
+html, body{
+    overflow-x: hidden;
+}
+/*font section*/
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Thin.ttf);
+
+}
+
+@font-face {
+    font-family: roboto2;
+    src: url(fonts/Roboto-Italic.ttf);
+
+}
+
+@font-face {
+    font-family: roboto3;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: foot;
+    src: url(fonts/Roboto-Light.ttf);
+}
+/*video section*/
+.trailer-container {
+   
+    margin: auto;
+    display: flex;
+
+}
+
+.trailer {
+    width: 100%;
+    
+   
+    /* margin: auto; */
+}
+
+
+
+/*AI video section */
+#text {
+    text-align: center;
+    padding: 2rem;
+    font-family: roboto2;
+
+}
+
+.AI-parent {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    /* height: 50vh; */
+    gap: 35px;
+    justify-content: space-around;
+    padding: 25px;
+    margin-bottom: 50px;
+
+}
+
+.AI-child {
+
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: transform 0.4s;
+}
+
+
+.AI-child:hover {
+    transform: scale(1.03);
+}
+
+/* .AI-child img {
+    width: 100%;
+
+} */
+
+
+
+.font-color {
+    text-indent: 1em;
+    /* font-family: roboto2; */
+}
+
+
+
+
+/* @media (min-aspect-ratio:16/9) {
+    .trailer{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media (min-aspect-ratio:16/9) {
+    .trailer{
+        width: auto;
+        height: 70vw;
+    }
+} */
+
+
+
+/* .ai-section {
+    display: flex;
+    margin: 30px;
+    width: 98vw;
+}
+
+.apple-samsung {
+    border-radius: 10px;
+    border-color: var(--hover);
+    font-size: 20px;
+    text-align: center;
+    font-family: roboto;
+} */
+
+
+
+
+/*ai section*/
+
+.samsung {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    width: 90%;
+    justify-content: space-around; */
+    
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    gap: 35px;
+    justify-content: space-around;
+}
+
+.samsung-products {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: skyblue;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-family: roboto;
+    /* justify-content: space-around; */
+
+}
+
+#Bixby {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.apple-button {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 10px 20px;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+
+.apple-button a {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.apple-button:hover {
+    background-color: white;
+    color: black;
+    transition: ease 0.10s;
+
+}
+
+
+
+
+
+
+/* newest product*/
+
+#text2 {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.Product {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    flex-wrap: wrap;
+    cursor: default;
+    
+}
+
+.Product-image {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 15px;
+    padding: 30px;
+    background-color: whitesmoke;
+    font-family: roboto;
+    cursor: default;
+    height: 350px;
+    align-content: center;
+    
+    
+}
+
+
+.Product-image img {
+    /* height: 190px;
+    width: 220px; */
+
+    width: 12rem;
+    height: 160px;
+    transition: transform 0.2s;
+    
+}
+
+.Product-image img:hover {
+    transform: scale(1.03);
+}
+
+.choose{
+    padding: 20px;
+    /* justify-content: ; */
+    margin: auto;
+    font-family: roboto;
+}
+.choose h3{
+    font-weight: 900;
+    font-family: serif;
+    
+}
+
+
+
+footer{
+    background-color: #222;
+    color: var(--navbody);
+    padding: 20px;
+    line-height: 20px;
+    
+}
+
+.footer{
+    
+    display: flex;
+     align-items: center;
+    justify-content: center;
+  gap: 20px;
+     font-family: roboto3;
+}
+.footerhr{
+    border: 0;
+    height: 1.5px;
+    background: rgb(3, 97, 135);
+    margin-bottom: 10px;
+}
+
+
+.acetekh{
+    font-family: roboto3;
+    font-weight: bold;
+   cursor: pointer;
+   
+    font-size: 0.9em;
+
+}
+
+/* footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+  
+  .footer h3{
+    font-family: foot;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+   
+   
+    
+  
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  footer a:hover{
+    transition: 0.4s ease-in-out;
+    color: skyblue;
+  }
+ footer h3{
+    text-transform: uppercase;
+ }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    text-transform: uppercase;
+  }
+   */
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+  }
+  @media (max-width: 800px) {
+    .AI-parent{
+        display: flex;
+    margin: auto;
+    max-width: 80%;
+    height: 70vh;
+    gap: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    }
+    .AI-child img {
+        width: 100%;
+        /* height: auto; */
+        object-fit: cover;
+        overflow: hidden;
+    padding: 0;
+ 
+
+        
+
+    }
+  }
+
+  @media (max-width: 1104px) {
+     .AI-parent  {
+         display: flex;
+    margin: auto;
+    max-width: 80%;
+    height: 70vh;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    }
+    .AI-child img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+        
+
+    }
+  }
+
+
+  @media  (max-width: 1024px) {
+     .AI-parent  {
+         display: flex;
+    margin: auto;
+    max-width: 75%;
+    height: 70vh;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    }
+    .AI-child img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+        
+
+    }
+    
+  }
+
+@media (max-width: 1782px) {
+    .AI-child img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+  
+
+
+  @media (max-width: 568px) {
+    
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: small;
+        gap: 10px;
+
+
+    }
+    
+  
+  }
+
+@media (max-width: 768px) {
+    .samsung{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+.samsung-products{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+    
+}
+  
+li::marker{
+content: "☼";
+}
+

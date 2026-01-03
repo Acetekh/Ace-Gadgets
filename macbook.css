@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+
+}
+
+html{
+    overflow-x: hidden;
+    
+}
+ /* hero section */
+.parent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+
+}
+
+.child {
+    width: 100%;
+    /* height: 50%; */
+
+}
+
+
+/* macbook m3|4 14-inch section  */
+#m3 {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.M3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    flex-wrap: wrap;
+    cursor: default;
+}
+
+.M4 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    background-color: whitesmoke;
+    cursor: default;
+    font-family: roboto;
+}
+
+.M4 img {
+    width: 210px;
+    height: 180px;
+    /* width: 12rem;
+    height: 160px; */
+    transition: transform 0.7s;
+}
+
+.M4 img:hover {
+    transform: scale(1.10);
+}
+@media (max-width:768px) {
+    .M3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .M4{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+}
+/* button section  */
+.m5 {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    /* background-color: #0056b3; */
+    border-radius: 5px;
+    border-style: solid;
+    cursor: pointer;
+    font-family: roboto;
+}
+
+.m5:hover {
+    color: black;
+    background-color: white;
+    transition: ease 0.12s;
+
+}
+.m5 a{
+    color: inherit; 
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.m6{
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    background-color: red;
+    /* background-color: #0056b3; */
+    border-radius: 5px;
+    border: solid;
+    /* border-style: solid; */
+    cursor: pointer;
+
+}
+
+.m6:hover {
+    color: black;
+    background-color: white;
+    transition: ease 0.12s;
+
+}
+.m6 a{
+    color: inherit; 
+    font-family: roboto;
+    font-weight: bold;
+}
+
+/* video section  */
+.parent1 {
+    display: flex;
+    margin: auto;
+    width: 99vw;
+    
+    background-color: white;
+}
+
+.parenttt{
+ display: flex;
+    margin: auto;
+    width: 100vw;
+    background-color: white;
+}
+
+.childd{
+     width: 100%;
+    margin: 0px;
+}
+.child1 {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px;
+}
+.watch{
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    background-color: white;
+}
+
+.watch-child{
+    width: 100%;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px;
+
+}
